@@ -80,7 +80,4 @@ class Logger:
         append.close()
         return reader.readline()
 
-# calc = MyCalc()
-# calc.calculate()
-
-print('hello world!')
+calc = MyCalc()
