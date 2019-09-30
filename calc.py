@@ -5,7 +5,6 @@ class Operator:
 
     def get(self):
         return self.operator
-
 class MyCalc:
     nums = []
     res = ''
@@ -67,7 +66,6 @@ class MyCalc:
             self.res = 'cos({}) = {}'.format(x, math.cos(x))
             print(self.res)
         else:
-            print('Invalid enter')
             fin = input('Would you like to exit? [y/n]\n')
             if fin == 'y':
                 sys.exit()
