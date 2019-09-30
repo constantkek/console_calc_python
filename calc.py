@@ -166,7 +166,5 @@ class History:
         reader.close()
         return res
 
-
-
 calc = MyCalc()
 calc.calculate()
