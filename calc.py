@@ -21,6 +21,9 @@ class MyCalc:
             print("\ttype \"sqrt\" to find square root")
             print("\ttype \"sin\" to find sinus")
             print("\ttype \"cos\" to find cosinus")
+            print("\ttype \"tan\" to find tangens")
+            print("\ttype \"ctg\" to find catangens")
+            print("\ttype \"fact\" to find factorial")
 
     def calculate(self):
         self.start()
@@ -64,6 +67,18 @@ class MyCalc:
         elif sign.get() == 'cos':
             x = float(input('Enter the number:'))
             self.res = 'cos({}) = {}'.format(x, math.cos(x))
+            print(self.res)
+        elif sign.get() == 'tan':
+            x = float(input('Enter the number:'))
+            self.res = 'tan({}) = {}'.format(x, math.tan(x))
+            print(self.res)
+        elif sign.get() == 'ctg':
+            x = float(input('Enter the number:'))
+            self.res = 'ctg({}) = {}'.format(x, 1/math.tan(x))
+            print(self.res)
+        elif sign.get() == 'fact':
+            x = float(input('Enter the number:'))
+            self.res = 'fact({}) = {}'.format(x, math.factorial(x))
             print(self.res)
         else:
             fin = input('Would you like to exit? [y/n]\n')
@@ -128,6 +143,7 @@ class MyCalc:
             except:
                 print('Wrong input. Numbers only.')
         return
+
     
     def isCalcAgain(self):
         flag = input('Would you like to calculate again? [y/n]\n')
